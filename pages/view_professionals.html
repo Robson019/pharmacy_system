@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Profissionais - Sistema de Farmácia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="icons/user.png" alt="user_icon"></li>
+            <li id="slogan">SISTEMA DE FARMÁCIA</li>
+            <li onmouseenter="changeImage('logout_icon', 'icons/running_hover.png')" onmouseleave="changeImage('logout_icon', 'icons/running.png')"><a href="index.html"><img src="icons/running.png" alt="logout_icon" id="logout_icon"></a></li>
+        </ul>
+    </nav>
+    <h1 class="top">PROFISSIONAIS CADASTRADOS</h1>
+    <a href="dashboard.html" target="_self" rel="prev" class="middle_page_link">VOLTAR</a>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>CPF</th>
+                    <th>NOME</th>
+                    <th>CARGO</th>
+                    <th>E-MAIL</th>
+                    <th>SALÁRIO</th>
+                    <th>TELEFONE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12345678901</td>
+                    <td>João Silva</td>
+                    <td>Farmacêutico</td>
+                    <td>joao.silva@gmail.com</td>
+                    <td>1500.00</td>
+                    <td>(11) 99999-9999</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Maria Santos</td>
+                    <td>Atendente</td>
+                    <td>maria.santos@hotmail.com</td>
+                    <td>1250.00</td>
+                    <td>(21) 88888-8888</td>
+                </tr>
+                <!-- Adicione mais linhas conforme necessário -->
+            </tbody>
+        </table>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

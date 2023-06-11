@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de farmácia - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="left_icon"><img src="icons/user.png" alt="user_icon"></li>
+            <li id="slogan">SISTEMA DE FARMÁCIA</li>
+            <li onmouseenter="changeImage('logout_icon', 'icons/running_hover.png')" onmouseleave="changeImage('logout_icon', 'icons/running.png')"><a href="index.html"><img src="icons/running.png" alt="logout_icon" id="logout_icon"></a></li>
+        </ul>
+    </nav>
+    <h1 class="top">PAINEL DE ADMINISTRAÇÃO</h1>
+    <main>
+        <div>
+            <section class="dashboard_section">
+                <h2>PROFISSIONAIS</h2>
+                <ul>
+                    <li><a href="create_professional.html" class="create-professional">NOVO</a></li>
+                    <li><a href="view_professionals.html">VISUALIZAR</a></li>
+                    <li><a href="delete_professional.html">EXCLUIR</a></li>
+                </ul>
+            </section>
+            <section class="dashboard_section">
+                <h2>MEDICAMENTOS</h2>
+                <ul>
+                    <li><a href="create_medicine.html" class="create-medicine">NOVO</a></li>
+                    <li><a href="view_medicines.html">VISUALIZAR</a></li>
+                    <li><a href="delete_medicine.html">EXCLUIR</a></li>
+                </ul>
+            </section>
+        </div>
+        <div>
+            <section class="dashboard_section">
+                <h2>FORNECEDORES</h2>
+                <ul>
+                    <li><a href="create_supplier.html" class="create-supplier">NOVO</a></li>
+                    <li><a href="view_suppliers.html">VISUALIZAR</a></li>
+                    <li><a href="delete_supplier.html">EXCLUIR</a></li>
+                </ul>
+            </section>
+            <section class="dashboard_section">
+                <h2>DEMANDAS</h2>
+                <ul>
+                    <li><a href="create_demand.html" class="create-demand">NOVA</a></li>
+                    <li><a href="view_demands.html">VISUALIZAR</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

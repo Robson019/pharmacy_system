@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de farmácia - Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="icons/user.png" alt="user_icon"></li>
+            <li id="slogan">SISTEMA DE FARMÁCIA</li>
+            <li onmouseenter="changeImage('logout_icon', 'icons/running_hover.png')" onmouseleave="changeImage('logout_icon', 'icons/running.png')"><a href="index.html"><img src="icons/running.png" alt="logout_icon" id="logout_icon"></a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="dashboard.html" id="professional-form">
+            <h1>DELETAR FORNECEDOR</h1>
+            <a href="dashboard.html" target="_self" rel="prev" class="middle_form_link">VOLTAR</a>
+            <input type="text" pattern="/^\d{2}([./])?\d{3}([./])?\d{3}\/?\d{4}-?\d{2}$/" placeholder="CNPJ" maxlength="18" required>
+            <input type="submit" value="DELETAR" class="delet_button">
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

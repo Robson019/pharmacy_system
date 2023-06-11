@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Profissionais - Sistema de Farmácia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="icons/user.png" alt="user_icon"></li>
+            <li id="slogan">SISTEMA DE FARMÁCIA</li>
+            <li onmouseenter="changeImage('logout_icon', 'icons/running_hover.png')" onmouseleave="changeImage('logout_icon', 'icons/running.png')"><a href="index.html"><img src="icons/running.png" alt="logout_icon" id="logout_icon"></a></li>
+        </ul>
+    </nav>
+    <h1 class="top">DEMANDAS SOLICITADAS</h1>
+    <a href="dashboard.html" target="_self" rel="prev" class="middle_page_link">VOLTAR</a>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>CPF FUNCIONÁRIO</th>
+                    <th>CNPJ FORNECEDOR</th>
+                    <th>ID MEDICAMENTO</th>
+                    <th>QUANTIDADE SOLICITADA</th>
+                    <th>DATA DA SOLICITAÇÃO</th>
+                    <th>OBSERVAÇÕES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>82861914041</td>
+                    <td>73296227000108</td>
+                    <td>1</td>
+                    <td>576</td>
+                    <td>26-03-2023</td>
+                    <td>Farmácia apresenta urgência para repor estoque de medicamento x</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282a5f;
+  color: #fff;
+  height: 60px;
+  padding-bottom: 10px;
+  box-shadow: 0px 10px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  margin-bottom: 15px;
+}
+
+#main_menu {
+  margin-left: -190px;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+}
+
+nav img {
+  height: 35px;
+  margin-bottom: -7px;
+}
+
+#slogan {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#slogan2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 100px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 25px 125px 25px 125px;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1), -5px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+form h1 {
+  color: #4e53bb;
+}
+
+h1 {
+  font-size: 20pt;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #282a5f;
+}
+
+a {
+  color: #282a5f;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4e53bb;
+}
+
+.middle_form_link {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  display: block;
+  width: 350px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #b0b0b0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: "Ubuntu", Arial, sans-serif;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+input::placeholder, select option {
+  font-family: "Ubuntu", Arial, sans-serif;
+}
+
+input[type="submit"] {
+  background-color: #4e53bb;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-weight: bold;
+  box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]:hover {
+  background-color: #282a5f;
+}
+
+form input.delet_button {
+  background-color: #d53030;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form input.delet_button:hover {
+  background-color: #620909;
+}
+
+#name, #uf, #city, #address, #commercial_name, #chemical_name, #supplier {
+  text-transform: uppercase;
+}
+
+#email {
+  text-transform: lowercase;
+}
+
+.top {
+  margin-top: 50px;
+}
+
+.dashboard_section {
+  background-color: #393c93;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  margin: 20px;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1), -5px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard_section h2 {
+  color: #ffffff;
+  margin-top: 125px;
+}
+
+.dashboard_section ul {
+  margin-top: 92px;
+}
+
+.dashboard_section ul li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.dashboard_section ul li a {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.dashboard_section ul li a:hover {
+  color: rgb(168, 177, 246);
+}
+
+table {
+  width: 100%;
+  margin-top: 50px;
+}
+
+thead {
+  background-color: #282a5f;
+  color: #fff;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #282a5f;
+}
+
+th {
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.middle_page_link {
+  margin-left: 48%;
+}

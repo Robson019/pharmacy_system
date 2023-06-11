@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Profissionais - Sistema de Farmácia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="icons/user.png" alt="user_icon"></li>
+            <li id="slogan">SISTEMA DE FARMÁCIA</li>
+            <li onmouseenter="changeImage('logout_icon', 'icons/running_hover.png')" onmouseleave="changeImage('logout_icon', 'icons/running.png')"><a href="index.html"><img src="icons/running.png" alt="logout_icon" id="logout_icon"></a></li>
+        </ul>
+    </nav>
+    <h1 class="top">MEDICAMENTOS CADASTRADOS</h1>
+    <a href="dashboard.html" target="_self" rel="prev" class="middle_page_link">VOLTAR</a>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOME COMERCIAL</th>
+                    <th>NOME QUÍMICO</th>
+                    <th>CNPJ FORNECEDOR</th>
+                    <th>TIPO</th>
+                    <th>PREÇO</th>
+                    <th>QUANTIDADE</th>
+                    <th>OBSERVAÇÕES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Dipirona</td>
+                    <td>Metamizol sódico</td>
+                    <td>73296227000108</td>
+                    <td>analgésico</td>
+                    <td>5.00</td>
+                    <td>7433</td>
+                    <td>Medicamento comum utilizado para aliviar dores</td>
+                </tr>
+                <!-- Adicione mais linhas conforme necessário -->
+            </tbody>
+        </table>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

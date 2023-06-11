@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Profissionais - Sistema de Farmácia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="icons/user.png" alt="user_icon"></li>
+            <li id="slogan">SISTEMA DE FARMÁCIA</li>
+            <li onmouseenter="changeImage('logout_icon', 'icons/running_hover.png')" onmouseleave="changeImage('logout_icon', 'icons/running.png')"><a href="index.html"><img src="icons/running.png" alt="logout_icon" id="logout_icon"></a></li>
+        </ul>
+    </nav>
+    <h1 class="top">FORNECEDORES CADASTRADOS</h1>
+    <a href="dashboard.html" target="_self" rel="prev" class="middle_page_link">VOLTAR</a>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>CNPJ</th>
+                    <th>NOME</th>
+                    <th>REPRESENTANTE</th>
+                    <th>E-MAIL</th>
+                    <th>TELEFONE</th>
+                    <th>OBSERVAÇÕES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>73296227000108</td>
+                    <td>Laboratório teste</td>
+                    <td>João da Silva</td>
+                    <td>joao.silva@gmail.com</td>
+                    <td>(11) 99999-9999</td>
+                    <td>Laboratório de pesquisa e análise x</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script src="js/js/script.js"></script>
+</body>
+</html>

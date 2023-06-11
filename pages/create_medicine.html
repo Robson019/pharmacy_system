@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de farmácia - Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="icons/user.png" alt="user_icon"></li>
+            <li id="slogan">SISTEMA DE FARMÁCIA</li>
+            <li onmouseenter="changeImage('logout_icon', 'icons/running_hover.png')" onmouseleave="changeImage('logout_icon', 'icons/running.png')"><a href="index.html"><img src="icons/running.png" alt="logout_icon" id="logout_icon"></a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="dashboard.html" id="medicine-form">
+            <h1>NOVO MEDICAMENTO</h1>
+            <a href="dashboard.html" target="_self" rel="prev" class="middle_form_link">VOLTAR</a>
+            <input type="text" id="commercial_name" name="coName" maxlength="100" placeholder="NOME COMERCIAL" required>
+            <input type="text" id="chemical_name" name="chName" maxlength="100" placeholder="NOME QUÍMICO" required>
+            <input type="text" pattern="/^\d{2}([./])?\d{3}([./])?\d{3}\/?\d{4}-?\d{2}$/" maxlength="18" placeholder="CNPJ DO FORNECEDOR" required>
+            <select id="medicine_type" name="medicine_type" required>
+                <option value="" disabled selected>TIPO DO MEDICAMENTO</option>
+                <option value="Antibiótico">Antibiótico</option>
+                <option value="Analgésico">Analgésico</option>
+                <option value="Anti-inflamatório">Anti-inflamatório</option>
+                <option value="Antialérgico">Antialérgico</option>
+                <option value="Antidepressivo">Antidepressivo</option>
+                <option value="Antipsicótico">Antipsicótico</option>
+                <option value="Antiviral">Antiviral</option>
+            </select>
+            <select name="pharm_form" required>
+                <option value="" disabled selected>FORMA FARMACÊUTICA</option>
+                <option value="comprimido">Comprimido</option>
+                <option value="cápsula">Cápsula</option>
+                <option value="solução">Solução</option>
+                <option value="pomada">Pomada</option>
+                <option value="suspensão">Suspensão</option>
+                <option value="creme">Creme</option>
+                <option value="ampola">Ampola</option>
+                <option value="spray">Spray</option>
+                <option value="outros">Outros</option>
+            </select>
+            <select name="need_recipe" required>
+                <option value="" disabled selected>SOLICITA RECEITA/ACOMPANHAMENTO</option>
+                <option value="sim">Sim</option>
+                <option value="não">Não</option>
+            </select>
+            <select name="stripe" required>
+                <option value="" selected disabled>SELECIONE A TARJA</option>
+                <option value="livre">Venda livre</option>
+                <option value="verde">Tarja verde</option>
+                <option value="amarela">Tarja amarela</option>
+                <option value="vermelha">Tarja vermelha</option>
+            </select>              
+            <input type="number" id="price" name="price" min="0.01" step="0.01" placeholder="PREÇO" required>
+            <input type="number" id="quantity" name="quantity" min="1" placeholder="QUANTIDADE" required>
+            <textarea name="observations" rows="4" cols="50" maxlength="255" placeholder="OBSERVAÇÕES..."></textarea>
+            <input type="submit" value="CADASTRAR">
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

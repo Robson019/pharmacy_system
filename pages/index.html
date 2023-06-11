@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de farmácia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+      <ul id="main_menu">
+        <li id="left_icon"><img src="icons/user.png" alt="user_icon"></li>
+        <li id="slogan2">SISTEMA DE FARMÁCIA</li>
+      </ul>
+    </nav>
+    <main>
+      <form action="dashboard.html">
+        <h1>REGISTRAR ADMIN</h1>
+        <a href="login.html" target="_self" rel="next" class="middle_form_link">LOGAR</a>
+        <input type="text" id="name" name="name" placeholder="NOME" maxlength="100" required>
+        <input type="text" id="cpf" name="cpf" placeholder="CPF" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required>
+        <input type="text" id="rg" name="rg" placeholder="RG" maxlength="12" pattern="\d{2}\.?\d{3}\.?\d{3}-?\d{1}" required>
+        <input type="email" id="email" name="email" maxlength="100" placeholder="E-MAIL" required>
+        <input type="tel" id="phone" name="phone" placeholder="TELEFONE" maxlength="15" pattern="\(?(\d{2})\)?\s*[\-]?\s*\d{4,5}[\-]?\d{4}" required>
+        <select id="uf" name="uf" required>
+          <option value="" disabled selected>UF</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+      </select>
+      <input type="text" id="city" name="city" maxlength="50" placeholder="CIDADE" required>
+      <input type="text" id="cep" name="cep" placeholder="CEP" maxlength="9" pattern="\d{5}-?\d{3}" required>
+      <input type="text" id="address" name="address" max="200" placeholder="ENDEREÇO" required>
+        <input type="password" id="password" name="password" maxlength="6" placeholder="SENHA" pattern="\d{6}" required>
+        <div>
+          <label for="termsAndUse">Ao se cadastrar, você aceita nossos termos:</label><input type="checkbox" name="termsAndUse" id="termsAndUse" required>
+        </div>
+        <input type="submit" value="CADASTRAR">
+      </form>
+    <script src="js/script.js"></script>
+</body>
+</html>
